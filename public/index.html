@@ -1,18 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MP1 Starter</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>MP1 Starter</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
+	<header id="nav">
+		<h1>Nature</h1>
+		<ul id="menu">
+			<li class="active"><a class="goto" data-target="0" href="#">Clouds</a></li>
+			<li><a class="goto" data-target="1" href="#">Gallery</a></li>
+			<li><a class="goto" data-target="2" href="#">Giraffes</a></li>
+			<li><a class="goto" data-target="3" href="#">Social</a></li>
+		</ul>
+	</header>
+
+	<section class="first">
+		<div class="video_container">
+			<video autoplay loop muted class="vid_bg">
+			<source src="vid/vid.mp4" type="video/mp4"/>
+			</video>
+		</div>
+	</section>
+	<section class="second">
+		<div class="carousel">
+			<div class="canvas"></div>
+
+			<div class="ctrl-container">
+				<i class="fa fa-arrow-left fa-5x ctrl ctrl-left"></i>
+				<i class="fa fa-arrow-right fa-5x ctrl ctrl-right"></i>
+			</div>
+		</div>
+	</section>
+
+	<section class="third">
+		<div class="vert-align">
+			<a class="btn" id="btn" href="#">
+			<i class="fa fa-rocket"></i> Show modal</a>
+		</div>
+	</section>
+
+	<section class="fourth">
+		<div class="multicolumn vert-align">
+			<div class="column">
+				<a href="http://twitter.com">
+				<i class="fa fa-twitter fa-5x"></i></a>
+			</div>
+			<div class="column">
+				<a href="http://facebook.com">
+				<i class="fa fa-facebook fa-5x"></i></a>
+			</div>
+			<div class="column">
+				<a href="http://yelp.com">
+				<i class="fa fa-yelp fa-5x"></i></a>
+			</div>
+		</div>
+	</section>
 
 
-  <script src="lib/jquery-2.1.3.min/index.js"></script>
-  <script src="js/script.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	<div class="overlay"></div>
+	<div class="modal">
+		<i class="fa fa-times-circle fa-2x btn-close"></i>
+		<h2>This is a modal box</h2>
+		<p>Giraffes are cool. Inside its peculiar appearance resides a peaceful and sociable soul. Giraffe's tongue is 17 inches long on average. Dayum.</p><br>
+		<p>Giraffes also have developed a behavior called flehmen, in which the female giraffe urinates in the male giraffe’s mouth to signal beginning of a mating season.</p>
+	</div>
+
+	<script src="lib/jquery-2.1.3.min/index.js"></script>
+	<script src="js/script.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
